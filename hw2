@@ -1,0 +1,10 @@
+arr1 = ['apple', 'pineapple', 'cucumber', 'orange']
+arr2 = ['red', 'yellow', 'green', 'orange']
+let obj={};
+function joinArraysToObject (arr1, arr2){
+    for(i=0;i<arr1.length;i++){
+        obj[arr1[i]]=arr2[i];
+    }
+    return obj;
+}
+console.log(joinArraysToObject(arr1,arr2));
